@@ -40,11 +40,6 @@ class MainActivity : AppCompatActivity() {
 
                 val IMC = (peso / (altura * altura))
 
-                //Navegar para a proxima tela
-                //Criar o layout da proxima tela
-                //Passa dados para a proxima tela
-
-                //Intent - Classe do proprio android
                 val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra(KEY_RESULT_IMC, IMC)
                 startActivity(intent)

@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:src="@drawable/ic_weight"
+        android:layout_margin="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/white" />
+
 
     <Button
         android:id="@+id/btn_calcular"
@@ -23,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        app:hintEnabled="false"
         tools:layout_editor_absoluteX="1dp"
         android:layout_margin="16dp">
 
@@ -30,23 +50,32 @@
             android:id="@+id/edt_peso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/ic_weight"
             android:hint="Digite o seu peso em kg ex: 65.5"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_margin="16dp"
+        app:hintEnabled="false"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
         tools:layout_editor_absoluteX="1dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_altura"
+            android:drawableEnd="@drawable/ic_height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:maxLength="5"
             android:hint="Digite a sua altura em metros ex: 1.70"
+
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
 
