@@ -1,12 +1,26 @@
 # Calculadora IMC
-Desc
+Este projeto realiza o cálculo do IMC e mostra o resultado para o usúario. 
+Foi criado com a linguagem Kotlin e possui duas telas de visualização.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 Screenshots
+<img src="/assets/Image1.png" width="200">&emsp;<img src="/assets/Image3.png" width="200">&emsp;<img src="/assets/Image2.png" width="200">
+
+
 
 ## Tecnologias
-Techs
+- Activity
+- Intent
+- Snackbar
+- ViewGroup
+  - LinearLayout
+  - ConstraintLayout
+- Views
+  -  ImageView
+  -  TextView
+  -  EditText
+  -  Button
 
 
 ## License
